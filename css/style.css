@@ -1,20 +1,51 @@
 body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(109, 109, 226);
 }
-
 .form {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(4, 56, 102, 0.4);
+	border-radius: 15px;
+	padding: 15px;
 }
 
 label {
-  margin: 5px;
-  font-size: 20px;
+	margin: 5px;
+	font-size: 20px;
+	color: whitesmoke;
 }
 
-input {
-  width: 200px;
+input,
+select {
+	box-sizing: content-box;
+	width: 200px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
+	margin: 2px;
+}
+
+input:invalid {
+	background-color: gold;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="submit"] {
+	background-color: rgb(45, 45, 236);
+	font-size: 25px;
+	margin-top: 20px;
+	align-self: center;
+}
+
+input[type="submit"]:hover {
+	background-color: rgb(31, 31, 238);
 }
